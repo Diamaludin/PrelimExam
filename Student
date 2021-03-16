@@ -6,38 +6,6 @@ private int Chours;
 private int pointsA;
 private static int lastStudentID;
  
-// the public get and set methods
- 
-public void setIDnum()
-{
-lastStudentID += 1;
-IDnum= lastStudentID;
-}
- 
-public int getIDnum()
-{
-return IDnum;
-}
- 
-public void setCHours(int number)
-{
-hours = number;
-}
- 
-public int getHours()
-{
-return Chours;
-}
- 
-public void setPointsA(int number)
-{
-points = number;
-}
- 
-public int getPointsA()
-{
-return pointsA;
-}
  
 // methods to display the fields
  
