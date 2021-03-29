@@ -1,73 +1,64 @@
 class Student
 {
-// the private data members
+
 private int IDnum;
 private int Chours;
 private int pointsA;
 private static int lastStudentID;
  
-// the public get and set methods
- 
-public void setIDnum()
+private void setIDnum()
 {
 lastStudentID += 1;
 IDnumber = lastStudentID;
 }
  
-public int getIDnum()
+private int getIDnum()
 {
 return IDnumber;
 }
  
-public void setHours(int number)
+private void setHours(int number)
 {
 Chours = number;
 }
  
-public int getHours()
+private int getHours()
 {
 return hours;
 }
  
-public void setPoints(int number)
+private void setPoints(int number)
 {
 pointsA = number;
 }
  
-public int getPoints()
+private int getPoints()
 {
 return pointsA;
 }
  
-// methods to display the fields
- 
-public void showIDnum()
+private void showIDnum()
 {
 System.out.println("ID Number is: " + IDnum);
 }
  
-public void showHours()
+private void showHours()
 {
 System.out.println("Credit Hours: " + CHours);
 }
  
-public void showPoints()
+private void showPoints()
 {
 System.out.println("Points Earned: " + pointsA);
 }
  
-public double getGradePoint()
+private double getGradePoint()
 {
 return (double) (pointsA / Chours);
 }
  
 }
- 
- 
- 
-// ShowStudent.java
-// client to test the Student class
- 
+
 class ShowStudent
 {
 public static void main (String args[])
